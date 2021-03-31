@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+<nav>
+<div class="navbar">
+
+    <div class="logo" aria-label="Devaasish"><a href="#Home">Devaasish</a></div>
+
+    <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Members">My Team</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdmnEDuYfiRh4wsyYi4WZXsAIVvGnaovIfuKetIfU4IHHwFVg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628" target="_blank">Feedback</a></li>
+    </ul>
+
+</div>
+
+    <section id="Home">
+        <div class="wrapper">
+        <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+            <li><span>YouTuber</span></li>
+            <li><span>Developer</span></li>
+            <li><span>Designer</span></li>
+            <li><span>Cricketer</span></li>
+        </ul>
+    </div></section>
+    <section id="About">
+        <img src="portfolioPic.jpg" draggable="false" alt="Portfolio Image">
+        <h1>About Me</h1>
+        <p>Hello there. I am Devaasish and I learned HTML, CSS, JAVASCRIPT for 3 years. I did my role as a Developer in Microsoft, Waymo, Owl Ventures. Thank you.</p>
+    </section>
+    <section id="Members">
+        <div id="m1">
+            <img id="i1" src="membersImg.jpg">
+            <h4>Adithya</h4>
+            <p id="s3">Web Designer</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div id="m2">
+            <img id="i2" src="membersImg.jpg">
+            <h3>Tanush</h3>
+            <p id="s2">Web Developer</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div id="m3">
+            <img id="i3" src="membersImg.jpg">
+            <h2>Sanjith</h2>
+            <p id="s1">UI Designer</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+    <section id="Projects">
+        <button id="p1" onclick="p1();" aria-label="Project 1">Project 1</button>
+        <button id="p2" onclick="p2();" aria-label="Project 2">Project 2</button>
+        <button id="p3" onclick="p3();" aria-label="Project 3">Project 3</button>
+        <button id="p4" onclick="p4();" aria-label="Project 4">Project 4</button>
+    </section>
+</nav>
+</body>
+<script>
+    function giveFeedback() {
+        var text = document.getElementById("labelText");
+        var sliderValue = document.getElementById("feedbackSlider").value;
+
+        if (sliderValue == 0) {
+            text.innerHTML = "";
+        }
+
+        if (sliderValue == 1) {
+            text.innerHTML = "Very Bad";
+        }
+
+        if (sliderValue == 2) {
+            text.innerHTML = "Slightly Bad";
+        }
+
+        if (sliderValue == 3) {
+            text.innerHTML = "Average";
+        }
+
+        if (sliderValue == 4) {
+            text.innerHTML = "Slightly Good";
+        }
+
+        if (sliderValue == 5) {
+            text.innerHTML = "Very Good";
+        }
+    }
+
+    function click() {
+        var button = document.getElementById("sendFeedback");
+    }
+
+    function p1() {
+        window.location.href = "https://devaasish.github.io/project-1/index.html";
+    }
+
+    function p2() {
+        window.location.href = "https://devaasish.github.io/Project-2/nav.html";
+    }
+
+    function p3() {
+        window.location.href = "https://devaasish.github.io/project-3/";
+    }
+
+    function p4() {
+        window.location.href = "https://devaasish.github.io/project-4/";
+    }
+</script>
+</html>

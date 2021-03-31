@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: currentColor;
+    color: #fff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    background: #0e22d6;
+    width: fit-content;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    padding-top: 10px;
+    padding: 10px 21.4px 10px 20px;
+}
+
+.menu li a {
+    color: chartreuse;
+    font-size: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.menu li a:hover {
+    color: crimson;
+}
+
+.logo a{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 30px 20px 30px 15px;
+    margin-right: 583px;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .static-txt{
+    position: relative;
+    top: 250px;
+    left: 10px;
+    color: blue;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+    position: relative;
+    top: 250px;
+    margin-left: 30px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+       top: -360px; 
+    }
+}
+
+#Home {
+    background-image: url("portfolioPic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    border-bottom: 0.5px solid black;
+    transition: 1s;
+}
+
+#About {
+    background: #c2d60e;
+    height: 650px;
+    border-bottom: 0.5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: 1s;
+}
+
+#About img{
+    width: 660px;
+    margin-left: 15px;
+    margin-top: 85px;
+}
+
+#About h1{
+    margin-top: 75px;
+    font-size: 40px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#About p{
+    position: relative;
+    bottom: 340px;
+    left: 760px;
+    font-size: 25px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#Members {
+    background: #0f0f0f;
+    height: 650px;
+    border-bottom: 0.5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 1s;
+}
+
+#i1 {
+    border-radius: 100%;
+    height: 35%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border: 1px solid black;
+}
+
+#i2 {
+    border-radius: 100%;
+    height: 35%;
+    margin-left: 30%;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+#i3 {
+    border-radius: 100%;
+    height: 35%;
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#Projects {
+    background: #c2d60e;
+    height: 650px;
+    border-bottom: 0.5px solid black;
+}
+
+#Feedback {
+    background: #00ee66;
+    height: 650px;
+    border-bottom: 0.5px solid black;
+}
+
+#m1 {
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    left: 50px;
+    top: 1450px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff,
+              3px 3px 5px #ceced1;
+}
+
+#m2 {
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    border-radius: 5px;
+    left: 575px;
+    top: 1450px;
+    box-shadow: -3px -3px 7px #ffffff,
+              3px 3px 5px #ceced1;
+}
+
+#m3 {
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    border-radius: 5px;
+    left: 1100px;
+    top: 1450px;
+    box-shadow: -3px -3px 7px #ffffff,
+              3px 3px 5px #ceced1;
+}
+
+#Members div:hover {
+    box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 32%;
+    color: #0f0fec;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 30%;
+    color: #0f0fec;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 28%;
+    color: #0f0fec;
+}
+
+#s1 {
+    margin-top: 30px;
+    margin-left: 32%;
+    font-size: 25px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#s2 {
+    margin-top: 30px;
+    margin-left: 25%;
+    font-size: 25px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#s3 {
+    margin-top: 30px;
+    margin-left: 26%;
+    font-size: 25px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#labelText {
+    position: relative;
+    left: 36%;
+    top: 27%;
+    font-size: 70px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#text {
+    position: relative;
+    left: -10%;
+    top: 40%;
+    font-size: 70px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+i {
+    height: fit-content;
+    width: fit-content;
+    padding: 15px;
+    position: relative;
+    left: 17%;
+    top: 7%;
+    margin: 0 4px;
+    font-size: 20px;
+    color: rgb(245, 20, 20);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #dad5d5;
+    transition: all 0.3s ease;
+}
+
+#feedbackSlider {
+    position: absolute;
+    left: 10.5%;
+    margin-top: 500px;
+    width: 80%;
+    height: 15px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background-color: #00cc66;
+    box-shadow: inset 0px 3px 18px rgba(0,0,0,0.6);
+    outline: none;
+}
+
+#feedbackSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(13, 9, 245);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#sendFeedback {
+    display: block;
+    position: fixed;
+    left: 38%;
+    top: 205%;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #0d0485;
+    outline: none;
+    color: blanchedalmond;
+    transition: all 0.5s ease-out;
+}
+
+#sendFeedback:hover {
+    background-color: blue;
+}
